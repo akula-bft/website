@@ -41,18 +41,17 @@ Akula supports the following standard JSONRPC calls:
 - `erigon_getHeaderByNumber`
 
 ### otterscan
-- `otterscan_getApiLevel`
-- `otterscan_getInternalOperations`
-- `otterscan_searchTransactionsBefore`
-- `otterscan_searchTransactionsAfter`
-- `otterscan_getBlockDetails`
-- `otterscan_getBlockDetailsByHash`
-- `otterscan_getBlockTransactions`
-- `otterscan_hasCode`
-- `otterscan_traceTransaction`
-- `otterscan_getTransactionError`
-- `otterscan_getTransactionBySenderAndNonce`
-- `otterscan_getContractCreator`
+- `ots_getApiLevel`
+- `ots_getInternalOperations`
+- `ots_searchTransactionsBefore`
+- `ots_searchTransactionsAfter`
+- `ots_getBlockDetails`
+- `ots_getBlockDetailsByHash`
+- `ots_getBlockTransactions`
+- `ots_hasCode`
+- `ots_getTransactionError`
+- `ots_getTransactionBySenderAndNonce`
+- `ots_getContractCreator`
 
 Please consult [Ethereum Foundation docs](https://ethereum.org/en/developers/docs/apis/json-rpc/) for detailed description of each RPC call.
 
