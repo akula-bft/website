@@ -8,7 +8,7 @@ const StyledNetworks = styled.div`
 
 const Networks = () => {
   return (
-    <Section header="Supported Networks">
+    <Section id="networks" header="Supported Networks">
       <StyledNetworks>
         Ethereum, Sepolia, Goerli, Ropsten, Rinkeby
       </StyledNetworks>

@@ -1,26 +1,27 @@
+import { Link } from "react-scroll";
 import styled from "styled-components";
 
 interface NavItemType {
   name: string;
-  link: string;
+  component: string;
 }
 
 const navItems: NavItemType[] = [
   {
     name: "Benefits",
-    link: "/",
+    component: "benefits",
   },
   {
     name: "Performance",
-    link: "/",
+    component: "performance",
   },
   {
     name: "Networks",
-    link: "/",
+    component: "networks",
   },
   {
     name: "Supported By",
-    link: "/",
+    component: "supported-by",
   },
 ];
 
@@ -38,7 +39,18 @@ const NavItems = () => {
   return (
     <StyledNavItems>
       {navItems.map((item, index) => {
-        return <NavItem key={index}>{item.name} </NavItem>;
+        return (
+          <Link
+            spy
+            smooth
+            key={item.name}
+            to={item.component}
+            offset={0}
+            duration={600}
+          >
+            <NavItem key={index}>{item.name} </NavItem>
+          </Link>
+        );
       })}
     </StyledNavItems>
   );

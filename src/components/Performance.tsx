@@ -8,7 +8,7 @@ const StyledPerformance = styled.div`
 
 const Performance = () => {
   return (
-    <Section header="Performance">
+    <Section id="performance" header="Performance">
       <StyledPerformance>
         Some metrics laid out nicely, maybe Erigon comparison
       </StyledPerformance>

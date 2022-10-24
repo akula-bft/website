@@ -8,7 +8,7 @@ const StyledBenefits = styled.div`
 
 const Benefits = () => {
   return (
-    <Section header="Benefits">
+    <Section id="benefits" header="Benefits">
       <StyledBenefits>
         Much lower disk footprint, Faster sync speed, Crash resilience,
         Extremely fast historical RPC queries

@@ -16,12 +16,13 @@ const Header = styled.h2`
 
 interface Props {
   children: React.ReactNode;
+  id: string;
   header: string;
 }
 
-const Section = ({ children, header }: Props) => {
+const Section = ({ id, children, header }: Props) => {
   return (
-    <StyledSection>
+    <StyledSection id={id}>
       <Header>{header}</Header>
       {children}
     </StyledSection>
