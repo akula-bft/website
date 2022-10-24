@@ -7,16 +7,20 @@ interface NavItemType {
 
 const navItems: NavItemType[] = [
   {
-    name: "Home",
+    name: "Benefits",
     link: "/",
   },
   {
-    name: "About",
-    link: "/about",
+    name: "Performance",
+    link: "/",
   },
   {
-    name: "Contact",
-    link: "/contact",
+    name: "Networks",
+    link: "/",
+  },
+  {
+    name: "Supported By",
+    link: "/",
   },
 ];
 
