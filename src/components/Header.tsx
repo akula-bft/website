@@ -4,6 +4,7 @@ import NavItems from "./NavItems";
 import Socials from "./Socials";
 
 const StyledHeader = styled.div`
+  position: relative;
   display: flex;
   align-items: center;
   justify-content: space-between;

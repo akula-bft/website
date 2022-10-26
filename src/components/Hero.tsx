@@ -12,7 +12,48 @@ const StyledHero = styled.div`
   align-items: center;
 `;
 
+const Gradients = styled.div`
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  filter: blur(250px) saturate(1.15);
+`;
+
+const BottomLeftGradient = styled.div`
+  position: absolute;
+  border-radius: 50%;
+  bottom: -10%;
+  left: -5%;
+  width: 35%;
+  height: 60%;
+  background: var(--third);
+`;
+
+const RightGradient = styled.div`
+  position: absolute;
+  border-radius: 50%;
+  right: -8%;
+  bottom: 50%;
+  transform: translateY(50%);
+  height: 40%;
+  width: 30%;
+  background: var(--first);
+`;
+
+const BottomRightGradient = styled.div`
+  position: absolute;
+  border-radius: 50%;
+  bottom: -10%;
+  right: 13%;
+  width: 35%;
+  height: 30%;
+  background: var(--second);
+`;
+
 const HeroText = styled.h1`
+  position: relative;
   font-size: 9.6rem;
   font-weight: 600;
   text-align: center;
@@ -21,6 +62,7 @@ const HeroText = styled.h1`
 `;
 
 const HeroSubText = styled.h3`
+  position: relative;
   font-size: 2.4rem;
   color: var(--sub);
   text-align: center;
@@ -30,6 +72,7 @@ const HeroSubText = styled.h3`
 `;
 
 const Button = styled.button`
+  position: relative;
   display: flex;
   align-items: center;
   background: var(--gradient);
@@ -40,6 +83,7 @@ const Button = styled.button`
 `;
 
 const GradientText = styled.span`
+  position: relative;
   font-size: 9.6rem;
   font-weight: 600;
   background: var(--gradient);
@@ -50,6 +94,11 @@ const GradientText = styled.span`
 const Hero = () => {
   return (
     <StyledHero>
+      <Gradients>
+        <BottomLeftGradient />
+        <RightGradient />
+        <BottomRightGradient />
+      </Gradients>
       <Header />
       <HeroText>
         The Worlds <GradientText>Fastest </GradientText> Ethereum Client
