@@ -9,22 +9,22 @@ interface SocialType {
 const socials: SocialType[] = [
   {
     name: "Github",
-    image: "https://img.icons8.com/ios-filled/50/000000/github.png",
+    image: "https://img.icons8.com/ios-filled/50/FFFFFF/github.png",
     link: "https://github.com/akula-bft/akula",
   },
   {
     name: "Twitter",
-    image: "https://img.icons8.com/ios-filled/50/000000/twitter.png",
+    image: "https://img.icons8.com/ios-filled/50/FFFFFF/twitter.png",
     link: "https://twitter.com/AkulaApp",
   },
   {
     name: "Docker",
-    image: "https://img.icons8.com/ios-filled/50/000000/docker.png",
+    image: "https://img.icons8.com/ios-filled/50/FFFFFF/docker.png",
     link: "",
   },
   {
     name: "Telegram",
-    image: "https://img.icons8.com/ios-filled/50/000000/telegram-app.png",
+    image: "https://img.icons8.com/ios-filled/50/FFFFFF/telegram-app.png",
     link: "",
   },
 ];
@@ -38,9 +38,8 @@ const SocialLink = styled.a`
   align-items: center;
   justify-content: center;
   cursor: pointer;
-  width: 2rem;
-  height: 2rem;
-  margin: 0 0.5rem;
+  width: 3.5rem;
+  margin-left: 2.2rem;
 `;
 
 const SocialImage = styled.img`
