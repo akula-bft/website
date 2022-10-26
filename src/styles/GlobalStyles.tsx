@@ -2,9 +2,9 @@ import { createGlobalStyle } from "styled-components";
 
 const GlobalStyle = createGlobalStyle`
     :root {
-        --bg: white;
-        --main: black;
-        --sub: grey;
+        --bg: black;
+        --main: white;
+        --sub: #C7C7C7;
         --primary: blue;
         --secondary: yellow;
     }
@@ -15,6 +15,9 @@ const GlobalStyle = createGlobalStyle`
         padding: 0;
         font-size: 10px;
         color: var(--main);
+        font-family: 'Roboto', sans-serif;
+        /* font-family: 'Roboto Mono', monospace; */
+        /* font-family: 'Ubuntu', sans-serif; */
     }
 
     button {
