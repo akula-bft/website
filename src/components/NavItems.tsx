@@ -27,6 +27,9 @@ const navItems: NavItemType[] = [
 
 const StyledNavItems = styled.div`
   display: flex;
+  position: absolute;
+  right: 50%;
+  transform: translateX(50%);
 `;
 
 const NavItem = styled.button`
