@@ -30,9 +30,15 @@ const StyledNavItems = styled.div`
 `;
 
 const NavItem = styled.button`
-  font-size: 1.5rem;
-  margin: 0 1rem;
+  font-size: 2rem;
+  margin: 0 1.2rem;
   cursor: pointer;
+  color: var(--sub);
+
+  transition: color 0.3s ease-in-out;
+  :hover {
+    color: var(--main);
+  }
 `;
 
 const NavItems = () => {
