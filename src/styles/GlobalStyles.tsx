@@ -5,8 +5,10 @@ const GlobalStyle = createGlobalStyle`
         --bg: black;
         --main: white;
         --sub: #C7C7C7;
-        --primary: blue;
-        --secondary: yellow;
+        --first: #5055F3;
+        --second: #F65F75;
+        --third: #68CCF4;
+        --gradient: linear-gradient(to right, var(--first), var(--second), var(--third));
     }
 
     * {
