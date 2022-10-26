@@ -8,8 +8,6 @@ const StyledHeader = styled.div`
   align-items: center;
   justify-content: space-between;
   width: 100%;
-  padding: 1rem;
-  border: solid 1px green;
   font-size: 2rem;
 `;
 
