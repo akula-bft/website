@@ -9,6 +9,8 @@ const GlobalStyle = createGlobalStyle`
         --second: #F65F75;
         --third: #68CCF4;
         --gradient: linear-gradient(to right, var(--first), var(--second), var(--third));
+
+        --terminal: #20272B;
     }
 
     * {
