@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import Header from "./Header";
+import Terminal from "./Terminal";
 
 const StyledHero = styled.div`
   display: flex;
@@ -91,6 +92,17 @@ const GradientText = styled.span`
   -webkit-text-fill-color: transparent;
 `;
 
+const TerminalContainer = styled.div`
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  transform: translateY(50%);
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+`;
+
 const Hero = () => {
   return (
     <StyledHero>
@@ -108,6 +120,9 @@ const Hero = () => {
         resilience and a historical state API
       </HeroSubText>
       <Button>View the docs →</Button>
+      <TerminalContainer>
+        <Terminal />
+      </TerminalContainer>
     </StyledHero>
   );
 };
