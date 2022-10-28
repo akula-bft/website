@@ -77,15 +77,15 @@ const Icon = styled.img`
 `;
 
 const Header = styled.h4`
-  font-size: 2.4rem;
+  font-size: 2.3rem;
   text-transform: uppercase;
   font-weight: 400;
-  margin-top: 3.4rem;
+  margin-top: 3.2rem;
 `;
 
 const Description = styled.p`
   width: 100%;
-  font-size: 1.7rem;
+  font-size: 1.6rem;
   color: var(--sub);
   font-weight: 400;
   text-align: center;
