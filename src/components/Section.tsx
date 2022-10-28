@@ -1,7 +1,8 @@
 import styled from "styled-components";
 
 interface SectionProps {
-  highlight: boolean;
+  highlight?: boolean;
+  noSpacing?: boolean;
 }
 
 const StyledSection = styled.div`
@@ -17,21 +18,29 @@ const StyledSection = styled.div`
 const Header = styled.h2`
   font-size: 9.6rem;
   font-weight: 500;
-  margin-bottom: 8rem;
+`;
+
+const Content = styled.div`
+  margin-top: ${(props: SectionProps) => (props.noSpacing ? "0" : "8rem")};
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  align-items: center;
 `;
 
 interface Props {
   children: React.ReactNode;
   id: string;
   header: string;
+  noSpacing?: boolean;
   highlight?: boolean;
 }
 
-const Section = ({ id, children, header, highlight }: Props) => {
+const Section = ({ id, children, header, noSpacing, highlight }: Props) => {
   return (
-    <StyledSection id={id} highlight={highlight!!}>
+    <StyledSection id={id} highlight={highlight}>
       <Header>{header}</Header>
-      {children}
+      <Content noSpacing={noSpacing}>{children}</Content>
     </StyledSection>
   );
 };
