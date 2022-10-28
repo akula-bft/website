@@ -87,15 +87,15 @@ const HeroText = styled.h1`
   font-weight: 600;
   text-align: center;
   max-width: 90rem;
-  margin-top: 10rem;
+  margin-top: 12rem;
 `;
 
 const HeroSubText = styled.h3`
   position: relative;
-  font-size: 2.4rem;
+  font-size: 2.3rem;
   color: var(--sub);
   text-align: center;
-  font-weight: 500;
+  font-weight: 400;
   margin-top: 2rem;
   max-width: 60rem;
 `;
@@ -106,9 +106,10 @@ const Button = styled.button`
   align-items: center;
   background: var(--gradient);
   border-radius: 1.4rem;
-  padding: 2.1rem 3.3rem;
-  font-size: 2.4rem;
-  margin-top: 5rem;
+  padding: 1.9rem 3.1rem;
+  font-size: 2.2rem;
+  margin-top: 6rem;
+  font-weight: 500;
 `;
 
 const GradientText = styled.span`
@@ -124,7 +125,7 @@ const TerminalContainer = styled.div`
   position: absolute;
   bottom: 0;
   left: 50%;
-  transform: translate(-50%, 50%);
+  transform: translate(-50%, 58%);
   width: 66%;
   display: flex;
   justify-content: center;
