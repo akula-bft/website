@@ -22,8 +22,8 @@ const App = () => {
       <Hero />
       <Benefits />
       <Performance />
-      <Networks />
       <SupportedBy />
+      <Networks />
       <Footer />
     </StyledApp>
   );
