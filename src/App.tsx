@@ -4,7 +4,7 @@ import Performance from "./components/Performance";
 import Footer from "./components/Footer";
 import Hero from "./components/Hero";
 import Networks from "./components/Networks";
-import SupportedBy from "./components/SupportedBy";
+import SupportedBy from "./components/Supporters";
 
 const StyledApp = styled.div`
   width: 100%;
