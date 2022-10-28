@@ -40,7 +40,9 @@ const benefits: BenefitType[] = [
 ];
 
 const StyledBenefits = styled.div`
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 3rem;
   align-items: center;
   justify-content: space-evenly;
   font-size: 2rem;
@@ -49,12 +51,14 @@ const StyledBenefits = styled.div`
 `;
 
 const Benefit = styled.div`
+  width: 100%;
   background: var(--terminal);
-  padding: 3.8rem 2.8rem;
+  padding: 3.8rem 2.4rem;
   border-radius: 1.5rem;
   display: flex;
   flex-direction: column;
   align-items: center;
+  height: 100%;
 `;
 
 const IconContainer = styled.div`
@@ -72,6 +76,22 @@ const Icon = styled.img`
   max-width: 4.2rem;
 `;
 
+const Header = styled.h4`
+  font-size: 2.4rem;
+  text-transform: uppercase;
+  font-weight: 400;
+  margin-top: 3.4rem;
+`;
+
+const Description = styled.p`
+  width: 100%;
+  font-size: 1.7rem;
+  color: var(--sub);
+  font-weight: 400;
+  text-align: center;
+  margin-top: 0.8rem;
+`;
+
 const Benefits = () => {
   return (
     <Section id="benefits" header="Benefits">
@@ -81,7 +101,8 @@ const Benefits = () => {
             <IconContainer>
               <Icon src={benefit.icon} alt={`${benefit.header} Icon`} />
             </IconContainer>
-            {benefit.header}
+            <Header>{benefit.header}</Header>
+            <Description>{benefit.subheader}</Description>
           </Benefit>
         ))}
       </StyledBenefits>
