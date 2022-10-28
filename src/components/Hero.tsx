@@ -2,6 +2,33 @@ import styled from "styled-components";
 import Header from "./Header";
 import Terminal from "./Terminal";
 
+const terminalContent: string[] = [
+  "user@ubuntu:~$ git clone https://github.com/akula-bft/akula",
+  "Cloning into 'akula'...",
+  "remote: Enumerating objects: 8019, done.",
+  "remote: Counting objects: 100% (259/259), done.",
+  "remote: Compressing objects: 100% (126/126), done.",
+  "remote: Total 8019 (delta 150), reused 211 (delta 125), pack-reused 7760",
+  "Receiving objects: 100% (8019/8019), 8.86 MiB | 6.76 MiB/s, done.",
+  "Resolving deltas: 100% (5590/5590), done.",
+  "user@ubuntu:~$ cd akula",
+  "user@ubuntu:~/akula$ cargo build --all --profile=production",
+  "    Updating git repository `https://github.com/vorot93/arrayvec`",
+  "    Updating git repository `https://github.com/vorot93/ethnum-rs`",
+  "    Updating git repository `https://github.com/vorot93/bytes-literal`",
+  "    Updating git repository `https://github.com/saulius/croaring-rs`",
+  "    Updating git submodule `https://github.com/lemire/CRoaringUnityBuild`",
+  "    Updating git repository `https://github.com/ledgerwatch/interfaces`",
+  "    Updating git repository `https://github.com/vorot93/ethereum-jsonrpc`",
+  "    Updating git repository `https://github.com/vorot93/rust-i256`",
+  "    Updating git repository `https://github.com/stevefan1999-personal/rust-igd`",
+  "    Updating git repository `https://github.com/vorot93/task-group`",
+  "    Updating git repository `https://github.com/michaellass/e2p-fileflags`",
+  "    Updating git repository `https://github.com/michaellass/e2p-sys.git`",
+  "  Downloaded wildmatch v1.1.0",
+  "  Downloaded indexmap v1.9.1",
+];
+
 const StyledHero = styled.div`
   display: flex;
   width: 100%;
@@ -96,9 +123,9 @@ const GradientText = styled.span`
 const TerminalContainer = styled.div`
   position: absolute;
   bottom: 0;
-  left: 0;
-  transform: translateY(50%);
-  width: 100%;
+  left: 50%;
+  transform: translate(-50%, 50%);
+  width: 66%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -122,7 +149,7 @@ const Hero = () => {
       </HeroSubText>
       <Button>View the docs →</Button>
       <TerminalContainer>
-        <Terminal />
+        <Terminal code={terminalContent} />
       </TerminalContainer>
     </StyledHero>
   );
