@@ -1,5 +1,7 @@
 import styled from "styled-components";
 
+import controls from "../assets/terminal/controls.svg";
+
 const terminalContent: string[] = [
   "user@ubuntu:~$ git clone https://github.com/akula-bft/akula",
   "Cloning into 'akula'...",
@@ -42,6 +44,7 @@ const StyledTerminal = styled.div`
 `;
 
 const Header = styled.div`
+  position: relative;
   width: 100%;
   display: flex;
   align-items: center;
@@ -73,10 +76,21 @@ const ContentLine = styled.div`
   margin-bottom: 1px;
 `;
 
+const Controls = styled.img`
+  position: absolute;
+  top: 50%;
+  right: 1.7rem;
+  transform: translateY(-50%);
+  height: 1.4rem;
+`;
+
 const Terminal = () => {
   return (
     <StyledTerminal>
-      <Header>Bash</Header>
+      <Header>
+        Bash
+        <Controls src={controls} alt="Terminal Controls" />
+      </Header>
       <Line />
       <Content>
         {terminalContent.map((line, index) => (
