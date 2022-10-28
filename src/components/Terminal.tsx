@@ -28,7 +28,7 @@ const Header = styled.div`
   justify-content: center;
   height: ${(props: TerminalProps) => (props.small ? "4rem" : "5rem")};
   color: var(--sub);
-  font-size: 1.8rem;
+  font-size: ${(props: TerminalProps) => (props.small ? "1.6rem" : "1.8rem")};
   font-family: "Ubuntu", sans-serif;
 `;
 
@@ -58,7 +58,7 @@ const Controls = styled.img`
   top: 50%;
   right: 1.7rem;
   transform: translateY(-50%);
-  height: 1.4rem;
+  height: ${(props: TerminalProps) => (props.small ? "1.4rem" : "1.5rem")};
 `;
 
 interface Props {
@@ -71,7 +71,7 @@ const Terminal = ({ code, small }: Props) => {
     <StyledTerminal>
       <Header small={small}>
         Bash
-        <Controls src={controls} alt="Terminal Controls" />
+        <Controls small={small} src={controls} alt="Terminal Controls" />
       </Header>
       <Line />
       <Content>
