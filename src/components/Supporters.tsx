@@ -44,7 +44,7 @@ const StyledSupporters = styled.div`
 `;
 
 const Description = styled.p`
-  font-size: 2.4rem;
+  font-size: 2.2rem;
   font-weight: 500;
   text-align: center;
   max-width: 66rem;
@@ -53,7 +53,7 @@ const Description = styled.p`
 `;
 
 const Link = styled.a`
-  font-size: 2.4rem;
+  font-size: 2.2rem;
   font-weight: 500;
   text-decoration: underline;
 `;
@@ -73,12 +73,12 @@ const Protocol = styled.a`
 `;
 
 const Logo = styled.img`
-  height: 17rem;
+  height: 16rem;
 `;
 
 const Name = styled.div`
   margin-top: 2.6rem;
-  font-size: 3.2rem;
+  font-size: 3rem;
   text-transform: uppercase;
   font-weight: 500;
 `;
