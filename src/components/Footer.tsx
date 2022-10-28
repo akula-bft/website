@@ -6,9 +6,11 @@ const StyledFooter = styled.div`
   display: flex;
   align-items: center;
   justify-content: space-between;
-  border: solid 1px red;
   padding: 1rem;
   width: 100%;
+  margin-top: 10rem;
+  padding: 0 14rem;
+  padding-bottom: 5rem;
 `;
 
 const Footer = () => {
