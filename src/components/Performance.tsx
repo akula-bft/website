@@ -43,14 +43,14 @@ const DescriptionSection = styled.div`
 `;
 
 const Description = styled.p`
-  font-size: 2.2rem;
+  font-size: 2.1rem;
   font-weight: 400;
   margin-top: 3.5rem;
 `;
 
 const Highlight = styled.p`
   position: relative;
-  font-size: 3.3rem;
+  font-size: 3.6rem;
   font-weight: 600;
   background: var(--gradient);
   -webkit-background-clip: text;
