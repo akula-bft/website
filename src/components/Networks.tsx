@@ -28,9 +28,9 @@ const Container = styled.div`
 const Network = styled.div`
   background: var(--terminal);
   border-radius: 1.5rem;
-  height: 9.5rem;
-  font-size: 2.4rem;
-  width: 30rem;
+  height: 9rem;
+  font-size: 2.2rem;
+  width: 26rem;
   display: flex;
   justify-content: center;
   align-items: center;
