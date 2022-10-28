@@ -16,12 +16,12 @@ const navItems: NavItemType[] = [
     component: "performance",
   },
   {
-    name: "Networks",
-    component: "networks",
+    name: "Supporters",
+    component: "supported-by",
   },
   {
-    name: "Supported By",
-    component: "supported-by",
+    name: "Networks",
+    component: "networks",
   },
 ];
 
