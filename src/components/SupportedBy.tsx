@@ -8,7 +8,7 @@ const StyledSupportedBy = styled.div`
 
 const SupportedBy = () => {
   return (
-    <Section id="supported-by" header="Supported By">
+    <Section id="supported-by" header="Supporters">
       <StyledSupportedBy>
         Gnosis, Stateful Works, 1Inch, Gitcoin
       </StyledSupportedBy>
