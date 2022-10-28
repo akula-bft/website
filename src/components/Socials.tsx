@@ -38,8 +38,8 @@ const SocialLink = styled.a`
   align-items: center;
   justify-content: center;
   cursor: pointer;
-  width: 3.5rem;
-  margin-left: 2.2rem;
+  width: 3rem;
+  margin-left: 2rem;
 `;
 
 const SocialImage = styled.img`
