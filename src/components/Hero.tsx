@@ -38,7 +38,7 @@ const StyledHero = styled.div`
   padding: 0 14rem;
   padding-top: 5rem;
   align-items: center;
-  margin-bottom: 31rem;
+  margin-bottom: 41rem;
 `;
 
 const Gradients = styled.div`
