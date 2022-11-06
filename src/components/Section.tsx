@@ -16,12 +16,12 @@ const StyledSection = styled.div`
 `;
 
 const Header = styled.h2`
-  font-size: 9.6rem;
+  font-size: 7.5rem;
   font-weight: 500;
 `;
 
 const Content = styled.div`
-  margin-top: ${(props: SectionProps) => (props.noSpacing ? "0" : "8rem")};
+  margin-top: ${(props: SectionProps) => (props.noSpacing ? "0" : "7rem")};
   display: flex;
   width: 100%;
   flex-direction: column;
