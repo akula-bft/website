@@ -99,6 +99,7 @@ const HeroSubText = styled.h3`
   font-weight: 400;
   margin-top: 2rem;
   max-width: 60rem;
+  line-height: 1.4;
 `;
 
 const Button = styled.a`
