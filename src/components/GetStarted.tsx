@@ -32,6 +32,10 @@ const Line = styled.div`
   margin-bottom: 1px;
 `;
 
+interface CopyProps {
+  open: boolean;
+}
+
 const Copy = styled.div`
   position: absolute;
   top: 1rem;
@@ -40,6 +44,9 @@ const Copy = styled.div`
   cursor: pointer;
   padding: 0.3rem;
   border-radius: 4px;
+
+  transition: opacity 0.2s;
+  opacity: ${(props: CopyProps) => (props.open ? 1 : 0)};
 `;
 
 const CopyImage = styled.img`
@@ -59,13 +66,11 @@ const GetStarted = () => {
         {CODE.split("\n\n").map((c: string) => (
           <Line>{c}</Line>
         ))}
-        {show && (
-          <CopyToClipboard text={CODE}>
-            <Copy>
-              <CopyImage src={copy} alt="Copy" />
-            </Copy>
-          </CopyToClipboard>
-        )}
+        <CopyToClipboard text={CODE}>
+          <Copy open={show}>
+            <CopyImage src={copy} alt="Copy" />
+          </Copy>
+        </CopyToClipboard>
       </StyledGetStarted>
     </Section>
   );
