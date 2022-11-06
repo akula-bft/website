@@ -20,7 +20,7 @@ const socials: SocialType[] = [
   {
     name: "Docker",
     image: "https://img.icons8.com/ios-filled/50/FFFFFF/docker.png",
-    link: "",
+    link: "https://hub.docker.com/repository/docker/vorot93/akula",
   },
   {
     name: "Telegram",
