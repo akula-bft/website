@@ -45,7 +45,8 @@ const DescriptionSection = styled.div`
 const Description = styled.p`
   font-size: 2.1rem;
   font-weight: 400;
-  margin-top: 3.5rem;
+  margin-top: 2rem;
+  line-height: 1.4;
 `;
 
 const Highlight = styled.p`
