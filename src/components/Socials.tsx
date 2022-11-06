@@ -1,4 +1,10 @@
 import styled from "styled-components";
+import {
+  DOCKER_LINK,
+  GITHUB_LINK,
+  TELEGRAM_LINK,
+  TWITTER_LINK,
+} from "../lib/links";
 
 interface SocialType {
   name: string;
@@ -10,22 +16,22 @@ const socials: SocialType[] = [
   {
     name: "Github",
     image: "https://img.icons8.com/ios-filled/50/FFFFFF/github.png",
-    link: "https://github.com/akula-bft/akula",
+    link: GITHUB_LINK,
   },
   {
     name: "Twitter",
     image: "https://img.icons8.com/ios-filled/50/FFFFFF/twitter.png",
-    link: "https://twitter.com/AkulaApp",
+    link: TWITTER_LINK,
   },
   {
     name: "Docker",
     image: "https://img.icons8.com/ios-filled/50/FFFFFF/docker.png",
-    link: "https://hub.docker.com/repository/docker/vorot93/akula",
+    link: DOCKER_LINK,
   },
   {
     name: "Telegram",
     image: "https://img.icons8.com/ios-filled/50/FFFFFF/telegram-app.png",
-    link: "https://t.me/+Tp4PNRes9zkzMGUy",
+    link: TELEGRAM_LINK,
   },
 ];
 
