@@ -34,10 +34,10 @@ const networks: NetworkType[] = [
 ];
 
 const StyledNetworks = styled.div`
-  width: 100%;
   row-gap: 10rem;
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(6, 1fr);
+  grid-gap: 4rem;
   font-size: 2rem;
   padding: 0 14rem;
 `;
@@ -63,9 +63,9 @@ const NetworkColor = styled.div`
 const Network = styled.div`
   background: var(--terminal);
   border-radius: 1.5rem;
-  height: 9rem;
-  font-size: 2.2rem;
-  width: 26rem;
+  height: 6.5rem;
+  font-size: 1.8rem;
+  width: 17rem;
   display: flex;
   justify-content: center;
   align-items: center;
