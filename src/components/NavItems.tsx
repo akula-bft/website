@@ -34,7 +34,7 @@ const StyledNavItems = styled.div`
 
 const NavItem = styled.button`
   font-size: 1.8rem;
-  margin: 0 1.2rem;
+  margin: 0 2.3rem;
   cursor: pointer;
   color: var(--sub);
 
