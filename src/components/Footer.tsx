@@ -10,6 +10,7 @@ const StyledFooter = styled.div`
   width: 100%;
   padding: 0 14rem;
   padding-bottom: 5rem;
+  margin-top: 5rem;
 `;
 
 const Footer = () => {
