@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { DOCS_LINK } from "../lib/links";
 import Header from "./Header";
 import Terminal from "./Terminal";
 
@@ -100,7 +101,7 @@ const HeroSubText = styled.h3`
   max-width: 60rem;
 `;
 
-const Button = styled.button`
+const Button = styled.a`
   position: relative;
   display: flex;
   align-items: center;
@@ -110,6 +111,7 @@ const Button = styled.button`
   font-size: 2.2rem;
   margin-top: 6rem;
   font-weight: 500;
+  cursor: pointer;
 `;
 
 const GradientText = styled.span`
@@ -148,7 +150,9 @@ const Hero = () => {
         Akula is written in Rust, it supports Faster sync speeds, crash
         resilience and a historical state API
       </HeroSubText>
-      <Button>View the docs →</Button>
+      <Button href={DOCS_LINK} target="_blank">
+        View the docs →
+      </Button>
       <TerminalContainer>
         <Terminal code={terminalContent} />
       </TerminalContainer>
