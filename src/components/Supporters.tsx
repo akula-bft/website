@@ -50,6 +50,7 @@ const Description = styled.p`
   max-width: 66rem;
   margin-bottom: 8rem;
   margin-top: 1.5rem;
+  line-height: 1.4;
 `;
 
 const Link = styled.a`
