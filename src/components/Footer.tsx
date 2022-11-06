@@ -8,7 +8,6 @@ const StyledFooter = styled.div`
   justify-content: space-between;
   padding: 1rem;
   width: 100%;
-  margin-top: 10rem;
   padding: 0 14rem;
   padding-bottom: 5rem;
 `;
