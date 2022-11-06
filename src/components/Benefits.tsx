@@ -65,7 +65,7 @@ const IconContainer = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
-  border: solid 2px var(--main);
+  border: solid 2px rgba(255, 255, 255, 0.4);
   border-radius: 2rem;
   width: 7.5rem;
   height: 7.5rem;
