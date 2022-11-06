@@ -1,13 +1,36 @@
 import styled from "styled-components";
 import Section from "./Section";
 
-const networks: string[] = [
-  "Mainnet",
-  "Sepolia",
-  "Goerli",
-  "Ropsten",
-  "Rinkeby",
-  "+ Custom networks",
+interface NetworkType {
+  name: string;
+  color: string;
+}
+
+const networks: NetworkType[] = [
+  {
+    name: "Mainnet",
+    color: "#2AB5AF",
+  },
+  {
+    name: "Sepolia",
+    color: "#CFB5F0",
+  },
+  {
+    name: "Goerli",
+    color: "#2E99F2",
+  },
+  {
+    name: "Ropsten",
+    color: "#FF488D",
+  },
+  {
+    name: "Rinkeby",
+    color: "#F6C441",
+  },
+  {
+    name: "+ Custom",
+    color: "#BBC0C4",
+  },
 ];
 
 const StyledNetworks = styled.div`
@@ -23,6 +46,18 @@ const Container = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
+`;
+
+interface ColorProps {
+  color: string;
+}
+
+const NetworkColor = styled.div`
+  border-radius: 50%;
+  background: ${(props: ColorProps) => props.color};
+  height: 1.3rem;
+  width: 1.3rem;
+  margin-right: 1.3rem;
 `;
 
 const Network = styled.div`
@@ -41,9 +76,12 @@ const Networks = () => {
   return (
     <Section id="networks" header="Networks">
       <StyledNetworks>
-        {networks.map((network, index) => (
-          <Container key={index}>
-            <Network>{network}</Network>
+        {networks.map((network: NetworkType) => (
+          <Container key={network.name}>
+            <Network>
+              <NetworkColor color={network.color} />
+              {network.name}
+            </Network>
           </Container>
         ))}
       </StyledNetworks>
