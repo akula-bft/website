@@ -25,7 +25,7 @@ const socials: SocialType[] = [
   {
     name: "Telegram",
     image: "https://img.icons8.com/ios-filled/50/FFFFFF/telegram-app.png",
-    link: "",
+    link: "https://t.me/+Tp4PNRes9zkzMGUy",
   },
 ];
 
