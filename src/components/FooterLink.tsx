@@ -12,6 +12,10 @@ const StyledFooterLink = styled.a`
 
   font-size: 1.9rem;
   font-weight: 500;
+
+  @media (max-width: 768px) {
+    display: none;
+  }
 `;
 
 const FooterLink = () => {
