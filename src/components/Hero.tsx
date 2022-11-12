@@ -43,6 +43,10 @@ const StyledHero = styled.div`
     padding: 0 10rem;
     padding-top: 5rem;
   }
+  @media (max-width: 768px) {
+    padding: 0 3rem;
+    padding-top: 2rem;
+  }
 `;
 
 const Gradients = styled.div`
@@ -51,7 +55,13 @@ const Gradients = styled.div`
   left: 0;
   width: 100%;
   height: 100%;
+  overflow: hidden;
+
   filter: blur(250px) saturate(1.15);
+  @media (max-width: 768px) {
+    filter: blur(130px) saturate(1.15);
+    transform: translateY(-4rem);
+  }
 `;
 
 const BottomLeftGradient = styled.div`
@@ -87,22 +97,46 @@ const BottomRightGradient = styled.div`
 
 const HeroText = styled.h1`
   position: relative;
-  font-size: 9.6rem;
   font-weight: 600;
   text-align: center;
   max-width: 90rem;
+
+  font-size: 9.6rem;
   margin-top: 12rem;
+  @media (max-width: 768px) {
+    font-size: 6rem;
+    margin-top: 6rem;
+  }
+`;
+
+const GradientText = styled.span`
+  position: relative;
+  font-weight: 600;
+  background: var(--gradient);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+  font-size: 9.6rem;
+  @media (max-width: 768px) {
+    font-size: 7rem;
+  }
 `;
 
 const HeroSubText = styled.h3`
   position: relative;
-  font-size: 2.3rem;
   color: var(--sub);
   text-align: center;
   font-weight: 400;
-  margin-top: 2rem;
   max-width: 60rem;
+
+  font-size: 2.3rem;
+  margin-top: 2rem;
   line-height: 1.4;
+  @media (max-width: 768px) {
+    font-size: 1.9rem;
+    margin-top: 2rem;
+    line-height: 1.3;
+  }
 `;
 
 const Button = styled.a`
@@ -111,20 +145,17 @@ const Button = styled.a`
   align-items: center;
   background: var(--gradient);
   border-radius: 1.4rem;
-  padding: 1.9rem 3.1rem;
-  font-size: 2.2rem;
-  margin-top: 6rem;
   font-weight: 500;
   cursor: pointer;
-`;
 
-const GradientText = styled.span`
-  position: relative;
-  font-size: 9.6rem;
-  font-weight: 600;
-  background: var(--gradient);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  font-size: 2.2rem;
+  padding: 1.9rem 3.1rem;
+  margin-top: 6rem;
+  @media (max-width: 768px) {
+    font-size: 1.9rem;
+    padding: 1.8rem 2.9rem;
+    margin-top: 5rem;
+  }
 `;
 
 const TerminalContainer = styled.div`
@@ -132,12 +163,17 @@ const TerminalContainer = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 13rem;
+  max-height: 62rem;
+  max-width: 120rem;
 
   width: 66vw;
-  max-width: 120rem;
   height: 34.6vw;
-  max-height: 62rem;
+  margin-top: 13rem;
+  @media (max-width: 768px) {
+    width: 100%;
+    height: 60vw;
+    margin-top: 8rem;
+  }
 `;
 
 const Hero = () => {
