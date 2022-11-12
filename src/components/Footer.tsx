@@ -10,9 +10,13 @@ const StyledFooter = styled.div`
   justify-content: space-between;
   margin: 1rem;
   width: 100%;
-  padding: 0 14rem;
   margin-bottom: 5rem;
   margin-top: 5rem;
+
+  padding: 0 14rem;
+  @media (max-width: 1367px) {
+    padding: 0 10rem;
+  }
 `;
 
 const Footer = () => {
