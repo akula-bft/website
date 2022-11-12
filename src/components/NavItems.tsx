@@ -30,6 +30,10 @@ const StyledNavItems = styled.div`
   position: absolute;
   right: 50%;
   transform: translateX(50%);
+
+  @media (max-width: 1090px) {
+    display: none;
+  }
 `;
 
 const NavItem = styled.button`
