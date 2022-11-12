@@ -1,7 +1,7 @@
 import styled from "styled-components";
 import { DOCS_LINK } from "../lib/links";
 
-const StyledGetInTouch = styled.a`
+const StyledFooterLink = styled.a`
   position: absolute;
   top: 50%;
   left: 50%;
@@ -14,12 +14,12 @@ const StyledGetInTouch = styled.a`
   font-weight: 500;
 `;
 
-const GetInTouch = () => {
+const FooterLink = () => {
   return (
-    <StyledGetInTouch href={DOCS_LINK} target="_blank">
-      Get in touch 👋
-    </StyledGetInTouch>
+    <StyledFooterLink href={DOCS_LINK} target="_blank">
+      View the docs →
+    </StyledFooterLink>
   );
 };
 
-export default GetInTouch;
+export default FooterLink;

@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import GetInTouch from "./GetInTouch";
+import FooterLink from "./FooterLink";
 import Logo from "./Logo";
 import Socials from "./Socials";
 
@@ -19,7 +19,7 @@ const Footer = () => {
   return (
     <StyledFooter>
       <Logo />
-      <GetInTouch />
+      <FooterLink />
       <Socials />
     </StyledFooter>
   );
