@@ -44,8 +44,13 @@ const SocialLink = styled.a`
   align-items: center;
   justify-content: center;
   cursor: pointer;
-  width: 2.7rem;
+
   margin-left: 2.3rem;
+  width: 2.7rem;
+  @media (max-width: 768px) {
+    margin-left: 1.4rem;
+    width: 2.1rem;
+  }
 `;
 
 const SocialImage = styled.img`
