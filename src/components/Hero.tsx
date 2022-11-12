@@ -33,13 +33,16 @@ const terminalContent: string[] = [
 const StyledHero = styled.div`
   display: flex;
   width: 100%;
-  height: 100vh;
   font-size: 2rem;
   flex-direction: column;
+  align-items: center;
+
   padding: 0 14rem;
   padding-top: 5rem;
-  align-items: center;
-  margin-bottom: 41rem;
+  @media (max-width: 1367px) {
+    padding: 0 10rem;
+    padding-top: 5rem;
+  }
 `;
 
 const Gradients = styled.div`
@@ -125,14 +128,16 @@ const GradientText = styled.span`
 `;
 
 const TerminalContainer = styled.div`
-  position: absolute;
-  bottom: 0;
-  left: 50%;
-  transform: translate(-50%, 58%);
-  width: 66%;
+  position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-top: 13rem;
+
+  width: 66vw;
+  max-width: 120rem;
+  height: 34.6vw;
+  max-height: 62rem;
 `;
 
 const Hero = () => {
