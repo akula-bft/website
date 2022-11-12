@@ -8,6 +8,14 @@ import { useState } from "react";
 
 const CODE = `git clone https://github.com/akula-bft/akula\n\ncd akula\n\ncargo build --all --profile=production`;
 
+const Container = styled.div`
+  width: 100%;
+
+  @media (max-width: 768px) {
+    display: none;
+  }
+`;
+
 const StyledGetStarted = styled.div`
   position: relative;
   display: grid;
@@ -58,21 +66,23 @@ const GetStarted = () => {
   const [show, setShow] = useState(false);
 
   return (
-    <Section header="Get Started" id="get-started">
-      <StyledGetStarted
-        onMouseEnter={() => setShow(true)}
-        onMouseLeave={() => setShow(false)}
-      >
-        {CODE.split("\n\n").map((c: string) => (
-          <Line>{c}</Line>
-        ))}
-        <CopyToClipboard text={CODE}>
-          <Copy open={show}>
-            <CopyImage src={copy} alt="Copy" />
-          </Copy>
-        </CopyToClipboard>
-      </StyledGetStarted>
-    </Section>
+    <Container>
+      <Section header="Get Started" id="get-started">
+        <StyledGetStarted
+          onMouseEnter={() => setShow(true)}
+          onMouseLeave={() => setShow(false)}
+        >
+          {CODE.split("\n\n").map((c: string, index: number) => (
+            <Line key={index}>{c}</Line>
+          ))}
+          <CopyToClipboard text={CODE}>
+            <Copy open={show}>
+              <CopyImage src={copy} alt="Copy" />
+            </Copy>
+          </CopyToClipboard>
+        </StyledGetStarted>
+      </Section>
+    </Container>
   );
 };
 
