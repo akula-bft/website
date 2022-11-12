@@ -37,13 +37,18 @@ const StyledNetworks = styled.div`
   row-gap: 10rem;
   display: grid;
   width: 100%;
-  grid-template-columns: repeat(auto-fit, minmax(17rem, 1fr));
-  grid-gap: 4rem;
   font-size: 2rem;
 
   padding: 0 14rem;
+  grid-template-columns: repeat(auto-fit, minmax(17rem, 1fr));
+  grid-gap: 4rem;
   @media (max-width: 1367px) {
     padding: 0 10rem;
+  }
+  @media (max-width: 768px) {
+    padding: 0 3rem;
+    grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+    grid-gap: 2rem;
   }
 `;
 
