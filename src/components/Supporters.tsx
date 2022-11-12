@@ -45,29 +45,51 @@ const StyledSupporters = styled.div`
   @media (max-width: 1367px) {
     padding: 0 10rem;
   }
+  @media (max-width: 768px) {
+    padding: 0 5rem;
+  }
 `;
 
 const Description = styled.p`
-  font-size: 2.2rem;
   font-weight: 500;
   text-align: center;
   max-width: 66rem;
-  margin-bottom: 8rem;
+
   margin-top: 1.5rem;
   line-height: 1.4;
+  font-size: 2.2rem;
+  margin-bottom: 8rem;
+  @media (max-width: 768px) {
+    margin-top: 1.5rem;
+    line-height: 1.3;
+    font-size: 1.8rem;
+    margin-bottom: 5rem;
+  }
 `;
 
 const Link = styled.a`
-  font-size: 2.2rem;
   font-weight: 500;
   text-decoration: underline;
+
+  font-size: 2.2rem;
+  @media (max-width: 768px) {
+    font-size: 1.8rem;
+  }
 `;
 
 const List = styled.div`
-  display: flex;
+  display: grid;
   width: 100%;
+  max-width: 120rem;
   align-items: center;
   justify-content: space-evenly;
+
+  grid-template-columns: repeat(auto-fit, minmax(18rem, 1fr));
+  grid-gap: 6rem;
+  @media (max-width: 768px) {
+    grid-template-columns: repeat(auto-fit, minmax(12rem, 1fr));
+    grid-gap: 3rem;
+  }
 `;
 
 const Protocol = styled.a`
@@ -79,13 +101,23 @@ const Protocol = styled.a`
 
 const Logo = styled.img`
   height: 14rem;
+  @media (max-width: 768px) {
+    height: 9rem;
+  }
 `;
 
 const Name = styled.div`
-  margin-top: 2.6rem;
-  font-size: 2.8rem;
   text-transform: uppercase;
   font-weight: 500;
+  text-align: center;
+
+  margin-top: 2.6rem;
+  font-size: 2.8rem;
+  @media (max-width: 768px) {
+    margin-top: 2rem;
+    font-size: 1.8rem;
+    white-space: nowrap;
+  }
 `;
 
 const Supporters = () => {
