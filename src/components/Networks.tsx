@@ -39,7 +39,11 @@ const StyledNetworks = styled.div`
   grid-template-columns: repeat(6, 1fr);
   grid-gap: 4rem;
   font-size: 2rem;
+
   padding: 0 14rem;
+  @media (max-width: 1367px) {
+    padding: 0 10rem;
+  }
 `;
 
 const Container = styled.div`
