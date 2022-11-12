@@ -41,7 +41,7 @@ const benefits: BenefitType[] = [
 
 const StyledBenefits = styled.div`
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(auto-fit, minmax(27rem, 1fr));
   grid-gap: 3rem;
   align-items: center;
   justify-content: space-evenly;
@@ -51,6 +51,9 @@ const StyledBenefits = styled.div`
   padding: 0 14rem;
   @media (max-width: 1367px) {
     padding: 0 10rem;
+  }
+  @media (max-width: 768px) {
+    padding: 0 3rem;
   }
 `;
 
