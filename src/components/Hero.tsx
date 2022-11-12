@@ -4,22 +4,22 @@ import Header from "./Header";
 import Terminal from "./Terminal";
 
 const terminalContent: string[] = [
-  "INFO Starting Akula (akula/v0.1.0-master-943f1ec-2022-11-12/aarch64-apple-darwin/rustc1.65.0)",
-  "INFO Current network: Ethereum",
-  "INFO Starting gRPC server on 127.0.0.1:7545",
-  "INFO JSONRPC server listening on 127.0.0.1:8545",
-  "INFO Loaded node key: c378f991548b94e209ec141e3ed2c20176bb96510d206192cc5e75adbe5316ce",
-  "INFO Starting Ethereum P2P node",
-  "INFO Node ID: 4e6ce35c38dc3f7403e17824a2ea9de8b7eb3418a220c504bec3906787fedfcfaaedb210263415f2ec548e6bbf22649c31d584ad857fa07bb0ac693cf2f17284",
-  "INFO Starting DNS discovery fetch from all.mainnet.ethdisco.net",
-  "INFO Starting discv4 at port 30303",
-  "INFO RLPx node listening at 0.0.0.0:30303",
-  "INFO Sentry gRPC server starting on 127.0.0.1:8000",
-  "INFO Running staged sync",
-  "INFO { 1/16 Headers }: RUNNING from genesis",
-  "INFO { 1/16 Headers }: Awaiting chain tip from external consensus engine...",
-  "INFO { 1/16 Headers }: Received chain tip hash: 0x8884…87ff, starting_download",
-  "INFO { 1/16 Headers }: Requesting 1024 headers ending at the tip/0x8884277ed8b7e05724d93aba5fea39adc35759885808ab1001ec91b0d60087ff",
+  "> INFO Starting Akula (akula/v0.1.0-master-943f1ec-2022-11-12/aarch64-apple-darwin/rustc1.65.0)",
+  "> INFO Current network: Ethereum",
+  "> INFO Starting gRPC server on 127.0.0.1:7545",
+  "> INFO JSONRPC server listening on 127.0.0.1:8545",
+  "> INFO Loaded node key: c378f991548b94e209ec141e3ed2c20176bb96510d206192cc5e75adbe5316ce",
+  "> INFO Starting Ethereum P2P node",
+  "> INFO Node ID: 4e6ce35c38dc3f7403e17824a2ea9de8b7eb3418a220c504bec3906787fedfcfaaedb210263415f2ec548e6bbf22649c31d584ad857fa07bb0ac693cf2f17284",
+  "> INFO Starting DNS discovery fetch from all.mainnet.ethdisco.net",
+  "> INFO Starting discv4 at port 30303",
+  "> INFO RLPx node listening at 0.0.0.0:30303",
+  "> INFO Sentry gRPC server starting on 127.0.0.1:8000",
+  "> INFO Running staged sync",
+  "> INFO { 1/16 Headers }: RUNNING from genesis",
+  "> INFO { 1/16 Headers }: Awaiting chain tip from external consensus engine...",
+  "> INFO { 1/16 Headers }: Received chain tip hash: 0x8884…87ff, starting_download",
+  "> INFO { 1/16 Headers }: Requesting 1024 headers ending at the tip/0x8884277ed8b7e05724d93aba5fea39adc35759885808ab1001ec91b0d60087ff",
 ];
 
 const StyledHero = styled.div`
@@ -158,7 +158,7 @@ const TerminalContainer = styled.div`
   max-height: 48rem;
   max-width: 120rem;
 
-  width: 66vw;
+  width: 55vw;
   height: 27vw;
   margin-top: 13rem;
   @media (max-width: 768px) {

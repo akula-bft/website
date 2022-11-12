@@ -31,7 +31,7 @@ const Header = styled.div`
   color: var(--sub);
   font-family: "Ubuntu", sans-serif;
 
-  height: ${(props: TerminalProps) => (props.small ? "4rem" : "5rem")};
+  height: ${(props: TerminalProps) => (props.small ? "4rem" : "4.5rem")};
   font-size: ${(props: TerminalProps) => (props.small ? "1.6rem" : "1.8rem")};
   @media (max-width: 768px) {
     height: ${(props: TerminalProps) => (props.small ? "4rem" : "3rem")};
