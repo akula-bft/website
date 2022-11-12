@@ -46,19 +46,27 @@ const StyledBenefits = styled.div`
   align-items: center;
   justify-content: space-evenly;
   font-size: 2rem;
-  padding: 0 14rem;
   width: 100%;
+
+  padding: 0 14rem;
+  @media (max-width: 1367px) {
+    padding: 0 10rem;
+  }
 `;
 
 const Benefit = styled.div`
   width: 100%;
   background: var(--terminal);
-  padding: 3.8rem 2.4rem;
   border-radius: 1.5rem;
   display: flex;
   flex-direction: column;
   align-items: center;
   height: 100%;
+
+  padding: 3.8rem 2.4rem;
+  @media (max-width: 1367px) {
+    padding: 2rem 2rem;
+  }
 `;
 
 const IconContainer = styled.div`
@@ -77,19 +85,29 @@ const Icon = styled.img`
 `;
 
 const Header = styled.h4`
-  font-size: 2.3rem;
   text-transform: uppercase;
   font-weight: 400;
+  text-align: center;
+
+  font-size: 2.3rem;
   margin-top: 3.2rem;
+  @media (max-width: 1367px) {
+    font-size: 2rem;
+    margin-top: 2.8rem;
+  }
 `;
 
 const Description = styled.p`
   width: 100%;
-  font-size: 1.6rem;
   color: var(--sub);
   font-weight: 400;
   text-align: center;
   margin-top: 0.8rem;
+
+  font-size: 1.6rem;
+  @media (max-width: 1367px) {
+    font-size: 1.4rem;
+  }
 `;
 
 const Benefits = () => {
