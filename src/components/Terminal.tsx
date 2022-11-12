@@ -28,10 +28,15 @@ const Header = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
-  height: ${(props: TerminalProps) => (props.small ? "4rem" : "5rem")};
   color: var(--sub);
-  font-size: ${(props: TerminalProps) => (props.small ? "1.6rem" : "1.8rem")};
   font-family: "Ubuntu", sans-serif;
+
+  height: ${(props: TerminalProps) => (props.small ? "4rem" : "5rem")};
+  font-size: ${(props: TerminalProps) => (props.small ? "1.6rem" : "1.8rem")};
+  @media (max-width: 768px) {
+    height: ${(props: TerminalProps) => (props.small ? "4rem" : "3rem")};
+    font-size: ${(props: TerminalProps) => (props.small ? "1.6rem" : "1.4rem")};
+  }
 `;
 
 const Line = styled.div`
@@ -41,12 +46,17 @@ const Line = styled.div`
 `;
 
 const Content = styled.div`
+  flex: 1;
   position: relative;
   width: 100%;
-  padding: 1rem 1.7rem;
   display: flex;
   flex-direction: column;
   overflow: hidden;
+
+  padding: 1rem 1.7rem;
+  @media (max-width: 768px) {
+    padding: 0.7rem 1.2rem;
+  }
 `;
 
 const ContentBottomCover = styled.div`
@@ -63,8 +73,13 @@ const ContentLine = styled.div`
   width: 100%;
   color: var(--sub);
   font-family: "Roboto Mono", monospace;
+
   font-size: ${(props: TerminalProps) => (props.small ? "1.4rem" : "1.6rem")};
   margin-bottom: 1px;
+  @media (max-width: 768px) {
+    font-size: ${(props: TerminalProps) => (props.small ? "1.4rem" : "1.1rem")};
+    margin-bottom: 1px;
+  }
 `;
 
 const Controls = styled.img`
@@ -72,7 +87,11 @@ const Controls = styled.img`
   top: 50%;
   right: 1.7rem;
   transform: translateY(-50%);
+
   height: ${(props: TerminalProps) => (props.small ? "1.4rem" : "1.5rem")};
+  @media (max-width: 768px) {
+    height: ${(props: TerminalProps) => (props.small ? "1.4rem" : "1.3rem")};
+  }
 `;
 
 interface Props {
