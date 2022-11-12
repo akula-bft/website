@@ -30,36 +30,55 @@ const terminalContent: string[] = [
 const StyledPerformance = styled.div`
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-gap: 9rem;
+  grid-gap: 8rem;
   font-size: 2rem;
   width: 100%;
+
   padding: 0 14rem;
+  grid-gap: 9rem;
+  @media (max-width: 1367px) {
+    grid-template-columns: 1fr;
+    padding: 0 10rem;
+  }
 `;
 
 const DescriptionSection = styled.div`
   width: 100%;
   display: flex;
   flex-direction: column;
+  max-width: 100rem;
+  margin: 0 auto;
 `;
 
 const Description = styled.p`
-  font-size: 2.1rem;
   font-weight: 400;
   margin-top: 2rem;
   line-height: 1.4;
+
+  font-size: 2.1rem;
+  @media (max-width: 1367px) {
+    font-size: 1.9rem;
+  }
 `;
 
 const Highlight = styled.p`
   position: relative;
-  font-size: 3.6rem;
   font-weight: 600;
   background: var(--gradient);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+
+  font-size: 3.6rem;
+  @media (max-width: 1367px) {
+    font-size: 3rem;
+    line-height: 1.2;
+  }
 `;
 
 const TerminalSection = styled.div`
   width: 100%;
+  max-width: 70.2rem;
+  margin: 0 auto;
 `;
 
 const Performance = () => {
