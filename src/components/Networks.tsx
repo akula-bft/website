@@ -36,7 +36,8 @@ const networks: NetworkType[] = [
 const StyledNetworks = styled.div`
   row-gap: 10rem;
   display: grid;
-  grid-template-columns: repeat(6, 1fr);
+  width: 100%;
+  grid-template-columns: repeat(auto-fit, minmax(17rem, 1fr));
   grid-gap: 4rem;
   font-size: 2rem;
 
