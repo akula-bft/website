@@ -40,6 +40,9 @@ const StyledPerformance = styled.div`
     grid-template-columns: 1fr;
     padding: 0 10rem;
   }
+  @media (max-width: 768px) {
+    padding: 0 3rem;
+  }
 `;
 
 const DescriptionSection = styled.div`
@@ -52,16 +55,21 @@ const DescriptionSection = styled.div`
 
 const Description = styled.p`
   font-weight: 400;
-  margin-top: 2rem;
   line-height: 1.4;
 
   font-size: 2.1rem;
+  margin-top: 2rem;
   @media (max-width: 1367px) {
     font-size: 1.9rem;
   }
+  @media (max-width: 768px) {
+    font-size: 1.6rem;
+    margin-top: 0;
+    margin-bottom: 2rem;
+  }
 `;
 
-const Highlight = styled.p`
+const Highlight = styled(Description)`
   position: relative;
   font-weight: 600;
   background: var(--gradient);
@@ -73,12 +81,20 @@ const Highlight = styled.p`
     font-size: 3rem;
     line-height: 1.2;
   }
+  @media (max-width: 768px) {
+    font-size: 2.4rem;
+    line-height: 1.2;
+  }
 `;
 
 const TerminalSection = styled.div`
   width: 100%;
   max-width: 70.2rem;
   margin: 0 auto;
+
+  @media (max-width: 768px) {
+    display: none;
+  }
 `;
 
 const Performance = () => {
@@ -95,12 +111,10 @@ const Performance = () => {
             access. Akula’s sync is split into stages, which allows for
             unprecedented parallelization of all major operations.
           </Description>
-          <Description>
-            <Highlight>
-              All of this enables the new standard of performance, not seen in
-              full nodes before.
-            </Highlight>
-          </Description>
+          <Highlight>
+            All of this enables the new standard of performance, not seen in
+            full nodes before.
+          </Highlight>
           <Description>
             Akula beats Erigon client by 1.5–2 times on execution performance.
             Without building additional indexes, a full validation of Ethereum
