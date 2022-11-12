@@ -12,6 +12,8 @@ const StyledTerminal = styled.div`
   border-radius: 1.5rem;
   flex-direction: column;
   width: 100%;
+  height: 100%;
+  overflow: hidden;
 
   border: 2px solid transparent;
   background-origin: border-box;
@@ -39,17 +41,29 @@ const Line = styled.div`
 `;
 
 const Content = styled.div`
+  position: relative;
   width: 100%;
   padding: 1rem 1.7rem;
   display: flex;
   flex-direction: column;
+  overflow: hidden;
+`;
+
+const ContentBottomCover = styled.div`
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 1rem;
+  background: var(--terminal);
 `;
 
 const ContentLine = styled.div`
   width: 100%;
-  font-size: ${(props: TerminalProps) => (props.small ? "1.4rem" : "1.6rem")};
   color: var(--sub);
   font-family: "Roboto Mono", monospace;
+  font-size: ${(props: TerminalProps) => (props.small ? "1.4rem" : "1.6rem")};
   margin-bottom: 1px;
 `;
 
@@ -80,6 +94,7 @@ const Terminal = ({ code, small }: Props) => {
             {line}
           </ContentLine>
         ))}
+        <ContentBottomCover />
       </Content>
     </StyledTerminal>
   );
