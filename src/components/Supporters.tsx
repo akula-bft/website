@@ -74,12 +74,12 @@ const Protocol = styled.a`
 `;
 
 const Logo = styled.img`
-  height: 16rem;
+  height: 14rem;
 `;
 
 const Name = styled.div`
   margin-top: 2.6rem;
-  font-size: 3rem;
+  font-size: 2.8rem;
   text-transform: uppercase;
   font-weight: 500;
 `;
