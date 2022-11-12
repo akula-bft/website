@@ -1,10 +1,5 @@
 import styled from "styled-components";
-import {
-  DOCKER_LINK,
-  GITHUB_LINK,
-  TELEGRAM_LINK,
-  TWITTER_LINK,
-} from "../lib/links";
+import { DOCKER_LINK, GITHUB_LINK, TWITTER_LINK } from "../lib/links";
 
 interface SocialType {
   name: string;
@@ -27,11 +22,6 @@ const socials: SocialType[] = [
     name: "Docker",
     image: "https://img.icons8.com/ios-filled/50/FFFFFF/docker.png",
     link: DOCKER_LINK,
-  },
-  {
-    name: "Telegram",
-    image: "https://img.icons8.com/ios-filled/50/FFFFFF/telegram-app.png",
-    link: TELEGRAM_LINK,
   },
 ];
 
