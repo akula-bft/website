@@ -39,8 +39,12 @@ const StyledSupporters = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 0 14rem;
   width: 100%;
+
+  padding: 0 14rem;
+  @media (max-width: 1367px) {
+    padding: 0 10rem;
+  }
 `;
 
 const Description = styled.p`
