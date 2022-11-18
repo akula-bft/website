@@ -103,13 +103,10 @@ const Performance = () => {
       <StyledPerformance>
         <DescriptionSection>
           <Description>
-            Akula preprocesses data outside of the storage engine, making
-            database write operations significantly faster. Is uses a staged
-            synchronization technique which allows for rapid synchronization. It
-            is written in Rust, leveraging a new Rust RVM interpreter evmodin,
-            specifically designed for Akula to allow for asynchronous state
-            access. Akula’s sync is split into stages, which allows for
-            unprecedented parallelization of all major operations.
+            Akula leverages multiple innovations:
+            preprocessing data outside storage engine,
+            staged synchronization technique and
+            a custom optimized EVM interpreter.
           </Description>
           <Highlight>
             All of this enables the new standard of performance, not seen in
