@@ -5,6 +5,7 @@ import gnosis from "../assets/supporters/gnosis.svg";
 import inch from "../assets/supporters/1inch.svg";
 import gitcoin from "../assets/supporters/gitcoin.svg";
 import stateful from "../assets/supporters/stateful.svg";
+import binance from "../assets/supporters/binance.svg";
 
 interface ProtocolType {
   logo: string;
@@ -13,6 +14,11 @@ interface ProtocolType {
 }
 
 const protocols: ProtocolType[] = [
+  {
+    logo: binance,
+    name: "Binance",
+    link: "https://www.binance.com/",
+  },
   {
     logo: gnosis,
     name: "Gnosis",
