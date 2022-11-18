@@ -1,22 +1,22 @@
 {
   "files": {
-    "main.js": "/akula-bft/website/static/js/main.0e7f94b4.js",
-    "static/js/787.4c7dcccb.chunk.js": "/akula-bft/website/static/js/787.4c7dcccb.chunk.js",
-    "static/media/stateful.svg": "/akula-bft/website/static/media/stateful.b27eacee62f4200b775f66440bd17587.svg",
-    "static/media/1inch.svg": "/akula-bft/website/static/media/1inch.953032ba20fb8215158a4f5bb9a2a707.svg",
-    "static/media/gitcoin.svg": "/akula-bft/website/static/media/gitcoin.299a10df33b602cc82bd8a7d2e67e42c.svg",
-    "static/media/gnosis.svg": "/akula-bft/website/static/media/gnosis.cffe192b690fa0ab46e7859fcf4830f1.svg",
-    "index.html": "/akula-bft/website/index.html",
-    "static/media/copy.svg": "/akula-bft/website/static/media/copy.119e24b69b766b26612d6956cbddc3e3.svg",
-    "static/media/disk.svg": "/akula-bft/website/static/media/disk.3754df0d313037a6e0baf7b4caee8785.svg",
-    "static/media/controls.svg": "/akula-bft/website/static/media/controls.8250c621890141cf22839c919fabd1fc.svg",
-    "static/media/api.svg": "/akula-bft/website/static/media/api.b75e805077f0b1d6e4833d03e2288863.svg",
-    "static/media/speed.svg": "/akula-bft/website/static/media/speed.d484e4e8ed0f4e7a31ec88243f731ee5.svg",
-    "static/media/crash.svg": "/akula-bft/website/static/media/crash.8f4f855e78a80fcb5d26daeb189fd36e.svg",
-    "main.0e7f94b4.js.map": "/akula-bft/website/static/js/main.0e7f94b4.js.map",
-    "787.4c7dcccb.chunk.js.map": "/akula-bft/website/static/js/787.4c7dcccb.chunk.js.map"
+    "main.js": "/static/js/main.56092acc.js",
+    "static/js/787.4c7dcccb.chunk.js": "/static/js/787.4c7dcccb.chunk.js",
+    "static/media/stateful.svg": "/static/media/stateful.b27eacee62f4200b775f66440bd17587.svg",
+    "static/media/1inch.svg": "/static/media/1inch.953032ba20fb8215158a4f5bb9a2a707.svg",
+    "static/media/gitcoin.svg": "/static/media/gitcoin.299a10df33b602cc82bd8a7d2e67e42c.svg",
+    "static/media/gnosis.svg": "/static/media/gnosis.cffe192b690fa0ab46e7859fcf4830f1.svg",
+    "static/media/copy.svg": "/static/media/copy.119e24b69b766b26612d6956cbddc3e3.svg",
+    "index.html": "/index.html",
+    "static/media/disk.svg": "/static/media/disk.3754df0d313037a6e0baf7b4caee8785.svg",
+    "static/media/controls.svg": "/static/media/controls.8250c621890141cf22839c919fabd1fc.svg",
+    "static/media/api.svg": "/static/media/api.b75e805077f0b1d6e4833d03e2288863.svg",
+    "static/media/speed.svg": "/static/media/speed.d484e4e8ed0f4e7a31ec88243f731ee5.svg",
+    "static/media/crash.svg": "/static/media/crash.8f4f855e78a80fcb5d26daeb189fd36e.svg",
+    "main.56092acc.js.map": "/static/js/main.56092acc.js.map",
+    "787.4c7dcccb.chunk.js.map": "/static/js/787.4c7dcccb.chunk.js.map"
   },
   "entrypoints": [
-    "static/js/main.0e7f94b4.js"
+    "static/js/main.56092acc.js"
   ]
 }
