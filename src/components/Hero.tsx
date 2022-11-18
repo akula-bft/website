@@ -178,11 +178,10 @@ const Hero = () => {
       </Gradients>
       <Header />
       <HeroText>
-        The Worlds <GradientText>Fastest </GradientText> Ethereum Client
+        The World's <GradientText>Fastest </GradientText> Ethereum archive node
       </HeroText>
       <HeroSubText>
-        Akula is written in Rust, it supports Faster sync speeds, crash
-        resilience and a historical state API
+        Comes with faster sync speeds, crash resilience and a historical state API
       </HeroSubText>
       <Button href={DOCS_LINK} target="_blank">
         View the docs →
