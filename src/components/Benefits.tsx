@@ -15,9 +15,9 @@ interface BenefitType {
 const benefits: BenefitType[] = [
   {
     icon: disk,
-    header: "lower disk footprint",
+    header: "Lower disk footprint",
     subheader:
-      "A new Ethereum state storage model resulting in <3TB for an  archive node and <900GB for a pruned node.",
+      "A new Ethereum state storage model resulting in <3TB for an archive node.",
   },
   {
     icon: speed,
@@ -33,7 +33,7 @@ const benefits: BenefitType[] = [
   },
   {
     icon: api,
-    header: "historical state API",
+    header: "Historical state API",
     subheader:
       "Supports extremely fast historical RPC queries like eth_call and trace_call.",
   },
