@@ -91,7 +91,7 @@ const HeroText = styled.h1`
   position: relative;
   font-weight: 600;
   text-align: center;
-  max-width: 90rem;
+  max-width: 100rem;
 
   font-size: 9.6rem;
   margin-top: 12rem;
@@ -181,7 +181,8 @@ const Hero = () => {
         The World's <GradientText>Fastest </GradientText> Ethereum archive node
       </HeroText>
       <HeroSubText>
-        Comes with faster sync speeds, crash resilience and a historical state API
+        Comes with faster sync speeds, crash resilience and a historical state
+        API
       </HeroSubText>
       <Button href={DOCS_LINK} target="_blank">
         View the docs →
