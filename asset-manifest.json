@@ -1,10 +1,9 @@
 {
   "files": {
-    "main.js": "/static/js/main.734aedda.js",
+    "main.js": "/static/js/main.bc1c79c9.js",
     "static/js/787.4c7dcccb.chunk.js": "/static/js/787.4c7dcccb.chunk.js",
     "static/media/stateful.svg": "/static/media/stateful.b27eacee62f4200b775f66440bd17587.svg",
     "static/media/1inch.svg": "/static/media/1inch.953032ba20fb8215158a4f5bb9a2a707.svg",
-    "static/media/gitcoin.svg": "/static/media/gitcoin.299a10df33b602cc82bd8a7d2e67e42c.svg",
     "static/media/gnosis.svg": "/static/media/gnosis.cffe192b690fa0ab46e7859fcf4830f1.svg",
     "static/media/copy.svg": "/static/media/copy.119e24b69b766b26612d6956cbddc3e3.svg",
     "index.html": "/index.html",
@@ -14,10 +13,10 @@
     "static/media/api.svg": "/static/media/api.b75e805077f0b1d6e4833d03e2288863.svg",
     "static/media/speed.svg": "/static/media/speed.d484e4e8ed0f4e7a31ec88243f731ee5.svg",
     "static/media/crash.svg": "/static/media/crash.8f4f855e78a80fcb5d26daeb189fd36e.svg",
-    "main.734aedda.js.map": "/static/js/main.734aedda.js.map",
+    "main.bc1c79c9.js.map": "/static/js/main.bc1c79c9.js.map",
     "787.4c7dcccb.chunk.js.map": "/static/js/787.4c7dcccb.chunk.js.map"
   },
   "entrypoints": [
-    "static/js/main.734aedda.js"
+    "static/js/main.bc1c79c9.js"
   ]
 }
