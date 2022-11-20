@@ -2,10 +2,9 @@ import styled from "styled-components";
 import Section from "./Section";
 
 import gnosis from "../assets/supporters/gnosis.svg";
-import inch from "../assets/supporters/1inch.svg";
-import gitcoin from "../assets/supporters/gitcoin.svg";
 import stateful from "../assets/supporters/stateful.svg";
 import binance from "../assets/supporters/binance.svg";
+import inch from "../assets/supporters/1inch.svg";
 
 interface ProtocolType {
   logo: string;
@@ -15,29 +14,24 @@ interface ProtocolType {
 
 const protocols: ProtocolType[] = [
   {
-    logo: binance,
-    name: "Binance",
-    link: "https://www.binance.com/",
-  },
-  {
     logo: gnosis,
     name: "Gnosis",
-    link: "https://gnosis.io/",
+    link: "https://gnosis.io",
   },
   {
     logo: stateful,
     name: "Stateful Works",
-    link: "https://stateful.mirror.xyz/",
+    link: "https://stateful.mirror.xyz",
+  },
+  {
+    logo: binance,
+    name: "Binance",
+    link: "https://binance.com",
   },
   {
     logo: inch,
     name: "1inch",
-    link: "https://1inch.io/",
-  },
-  {
-    logo: gitcoin,
-    name: "Gitcoin",
-    link: "https://gitcoin.co/",
+    link: "https://1inch.io",
   },
 ];
 
